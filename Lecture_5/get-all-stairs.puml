@@ -1,0 +1,19 @@
+@startuml
+start
+
+:stair_height= 0.20;
+:func = Approximierte Funktion;
+:intervals = Intervalle in denen Steigung zu groß;
+:allStairs = [];
+
+while (iteriere jedes interval in intervals)
+ :difference = Berechne Höhenunterschied von InteralEnde und IntervalStart;
+ :amountOfStairs = difference / stair_height;
+ :averageLength = (IntervalEnde - IntervalStart) / amountOfStairs;
+ :Speichere in allStairs;
+endwhile
+
+:Gebe allStairs aus;
+
+stop
+@enduml
